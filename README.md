@@ -4,7 +4,16 @@
 
 ### 제약조건
 * 상점에 관리자는 한 명
-* 상품은 하나씩 등록 
+* 상품은 하나씩 등록 (단품 거래)
+
+## 다이어그램
+```mermaid
+classDiagram
+    Shop --> Order
+    Shop <-- Accounting 
+    Order <-- Accounting 
+
+```
 
 ### 주문
 * 상품 주문 
